@@ -11,7 +11,7 @@ public class TesteLeitura {
 //
 //        //Fluxo de entrada com arquivo
 //        InputStream fis = s.getInputStream(); //System.in; //new FileInputStream("lorem.txt");
-//        Reader isr = new InputStreamReader(fis);
+//        Reader isr = new InputStreamReader(fis, "UTF-8");
 //        BufferedReader br = new BufferedReader(isr);
 //
 //        //Fluxo de saída com arquivo

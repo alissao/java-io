@@ -2,6 +2,7 @@ package com.cotefacil2.teste;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class TesteUnicodeEEncoding {
 
@@ -22,9 +23,9 @@ public class TesteUnicodeEEncoding {
         sNovo = new String(bytes, "UTF-16");
         System.out.println(sNovo);
 
-        bytes = s.getBytes("windows-1252");
-        System.out.println(bytes.length + ", windows-1252");
-        sNovo = new String(bytes, "windows-1252");
+        bytes = s.getBytes(StandardCharsets.US_ASCII);
+        System.out.println(bytes.length + ", US_ASCII, ");
+        sNovo = new String(bytes, "US_ASCII");
         System.out.println(sNovo);
 
     }
